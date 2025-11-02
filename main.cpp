@@ -9,7 +9,7 @@ int main() {
     auto mapfile = std::ifstream("./map.in");
     Game *game = new Game(mapfile);
     //                    ^^^^^^^
-    // 提交时将上一行改为
+    // When submitting, change the above line to:
     // Game *game = new Game(std::cin);
 
     std::vector<Game::Save *> saves;
